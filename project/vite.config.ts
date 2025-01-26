@@ -7,6 +7,4 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: 'sympTone', // Remplacez NOM_DU_REPO par le nom de votre dépôt GitHub
-
 });

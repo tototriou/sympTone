@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Home, Users, Package, Info, Mail, MessageSquare, Stethoscope } from 'lucide-react';
+import { Menu, X, Home, Users, Package, Info, Mail, MessageSquare } from 'lucide-react';
 
 function App() {
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -47,52 +47,51 @@ function App() {
       name: 'Romain Hamze',
       role: 'Directeur général - CEO',
       description: 'Expert en stratégie d\'entreprise',
-      image: 'photos/romain.jpg'
+      image: 'public/photos/romain.jpg'
     },
     {
       name: 'Clara Millet',
       role: 'Ingénieur scientifique - CTO',
       description: 'Responsable technique et spécialiste en sciences biologiques. Responsable RSE',
-      image: 'photos/clara.jpg'
+      image: 'public/photos/clara.jpg'
     },
     {
       name: 'Lénaïc Callanquin',
       role: 'Ingénieur scientifique - CSO',
       description: 'Responsable Technique, spécialiste en machine learning',
-      image: 'photos/lenaic.jpg'
+      image: 'public/photos/lenaic.jpg'
     },
     {
       name: 'Margaux Mager',
       role: 'Directrice Financière - CFO',
       description: 'Spécialiste en gestion des ressources et stratégie financière.',
-      image: 'photos/margaux.jpg'
+      image: 'public/photos/margaux.jpg'
     },
     {
       name: 'Camille Kelbert',
       role: 'Directrice communication - CMO',
       description: 'Spécialiste en stratégie et visibilité d\'entreprise.',
-      image: 'photos/cam.jpg'
+      image: 'public/photos/cam.jpg'
     }
   ];
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
-      <nav className={`fixed w-full z-50 transition-transform duration-300 ${
-        isNavVisible ? 'translate-y-0' : '-translate-y-full'
-      }`}>
+      <nav className={`fixed w-full z-50 transition-transform duration-300 ${isNavVisible ? 'translate-y-0' : '-translate-y-full'
+        }`}>
         <div className="bg-white text-burgundy-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-28">
               <div className="flex items-center space-x-2">
-                  <img
-                  src="photos/logo.jpg"
+                <img
+                  src="public/photos/logo.jpg"
                   alt="logo de l'entreprise"
                   className="w-32 rounded-lg m-auto"
                 />
-              
+
               </div>
-              
+
               {/* Desktop Navigation */}
               <div className="hidden md:flex space-x-8">
                 {sections.map(({ id, title }) => (
@@ -145,9 +144,9 @@ function App() {
       <main>
         {/* Hero Section */}
         <section id="home" className="h-[50vh] relative flex items-center justify-center">
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center z-0 "
-            style={{ 
+            style={{
               backgroundImage: 'url("https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80")'
             }}
           ></div>
@@ -172,7 +171,7 @@ function App() {
               </div>
               <div className="animate-slide-in-right h-full flex items-center justify-center">
                 <img
-                  src="photos/téléchargement (1).jpg"
+                  src="public/photos/téléchargement (1).jpg"
                   alt="Microscope"
                   className="w-full rounded-lg shadow-xl m-auto"
                 />
@@ -189,7 +188,7 @@ function App() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="relative">
                   <img
-                    src="photos/473334817_948422736936132_6477449063096585163_n.jpg"
+                    src="public/photos/473334817_948422736936132_6477449063096585163_n.jpg"
                     alt="Product"
                     className="rounded-lg shadow-xl"
                   />
@@ -203,22 +202,22 @@ function App() {
                     <p className="mt-4">
                       L'objectif est de rendre la détection rapide, simple et accessible à tous, tout en limitant le recours à des méthodes plus complexes comme les tests PCR. Ce dispositif contribue non seulement à désengorger les cabinets médicaux, mais également à permettre une prise en charge immédiate et à adapter efficacement les gestes barrières pour limiter la propagation de la maladie.
                     </p>
-                   </div>
+                  </div>
                   <div className="mt-4">
-   
-              <strong>Notre produit est disponible pour les médecins et les pédiatres libéraux sous forme d'un abonnement annuel. </strong>
-                    <div className= "mt-4">
-                    <strong> Pour plus d'informations, contactez-nous.</strong>
+
+                    <strong>Notre produit est disponible pour les médecins et les pédiatres libéraux sous forme d'un abonnement annuel. </strong>
+                    <div className="mt-4">
+                      <strong> Pour plus d'informations, contactez-nous.</strong>
                     </div>
-  </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-<section>
-  
-</section>
+        <section>
+
+        </section>
 
 
         {/* Team Section */}
@@ -227,8 +226,8 @@ function App() {
             <h2 className="text-4xl font-bold text-burgundy-800 mb-12 text-center animate-fade-in">L'équipe</h2>
             <div className="max-w-5xl mx-auto flex gap-8 flex-wrap justify-center">
               {teamMembers.map((member, index) => (
-                <div 
-                  key={member.name} 
+                <div
+                  key={member.name}
                   className="text-center w-64 animate-slide-up hover:cursor-pointer"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
@@ -354,7 +353,7 @@ function App() {
         >
           <MessageSquare size={24} />
         </button>
-        
+
         {isChatOpen && (
           <div className="absolute bottom-16 right-0 w-80 bg-white rounded-lg shadow-xl">
             <div className="bg-burgundy-800 text-white p-4 rounded-t-lg">
@@ -364,16 +363,14 @@ function App() {
               {chatMessages.map((message, index) => (
                 <div
                   key={index}
-                  className={`mb-4 ${
-                    message.type === 'user' ? 'text-right' : 'text-left'
-                  }`}
+                  className={`mb-4 ${message.type === 'user' ? 'text-right' : 'text-left'
+                    }`}
                 >
                   <div
-                    className={`inline-block p-3 rounded-lg ${
-                      message.type === 'user'
-                        ? 'bg-burgundy-700 text-white'
-                        : 'bg-gray-100 text-gray-800'
-                    }`}
+                    className={`inline-block p-3 rounded-lg ${message.type === 'user'
+                      ? 'bg-burgundy-700 text-white'
+                      : 'bg-gray-100 text-gray-800'
+                      }`}
                   >
                     {message.text}
                   </div>
@@ -400,7 +397,7 @@ function App() {
           </div>
         )}
       </div>
-    </div>  
+    </div>
   );
 }
 
