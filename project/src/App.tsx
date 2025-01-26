@@ -47,31 +47,31 @@ function App() {
       name: 'Romain Hamze',
       role: 'Directeur général - CEO',
       description: 'Expert en stratégie d\'entreprise',
-      image: 'public/photos/romain.jpg'
+      image: 'photos/romain.jpg'
     },
     {
       name: 'Clara Millet',
       role: 'Ingénieur scientifique - CTO',
       description: 'Responsable technique et spécialiste en sciences biologiques. Responsable RSE',
-      image: 'public/photos/clara.jpg'
+      image: 'photos/clara.jpg'
     },
     {
       name: 'Lénaïc Callanquin',
       role: 'Ingénieur scientifique - CSO',
       description: 'Responsable Technique, spécialiste en machine learning',
-      image: 'public/photos/lenaic.jpg'
+      image: 'photos/lenaic.jpg'
     },
     {
       name: 'Margaux Mager',
       role: 'Directrice Financière - CFO',
       description: 'Spécialiste en gestion des ressources et stratégie financière.',
-      image: 'public/photos/margaux.jpg'
+      image: 'photos/margaux.jpg'
     },
     {
       name: 'Camille Kelbert',
       role: 'Directrice communication - CMO',
       description: 'Spécialiste en stratégie et visibilité d\'entreprise.',
-      image: 'public/photos/cam.jpg'
+      image: 'photos/cam.jpg'
     }
   ];
 
@@ -85,7 +85,7 @@ function App() {
             <div className="flex items-center justify-between h-28">
               <div className="flex items-center space-x-2">
                 <img
-                  src="public/photos/logo.jpg"
+                  src="photos/logo.jpg"
                   alt="logo de l'entreprise"
                   className="w-32 rounded-lg m-auto"
                 />
@@ -171,7 +171,7 @@ function App() {
               </div>
               <div className="animate-slide-in-right h-full flex items-center justify-center">
                 <img
-                  src="public/photos/téléchargement (1).jpg"
+                  src="photos/téléchargement (1).jpg"
                   alt="Microscope"
                   className="w-full rounded-lg shadow-xl m-auto"
                 />
@@ -188,7 +188,7 @@ function App() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="relative">
                   <img
-                    src="public/photos/473334817_948422736936132_6477449063096585163_n.jpg"
+                    src="photos/473334817_948422736936132_6477449063096585163_n.jpg"
                     alt="Product"
                     className="rounded-lg shadow-xl"
                   />
